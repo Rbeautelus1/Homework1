@@ -7,3 +7,37 @@ c.	Average miles per gallon (use $5.6 gal/100 miles for test propose).
 d.	Parking fees per day (use $10 per day for test propose).
 e.	Tolls per day (use $3.00 for test propose).
 */
+#include <iostream>
+        using namespace std;
+
+        int main(){
+
+            double miles;
+            double Cost_Pgasoline;
+            double Amiles;
+            double Fees;
+            double Tolls;
+            double total_cost;
+
+            cout << "Enter total miles driven per day: ";
+            cin >> miles;
+
+            cout << "Cost per gallon of gasoline: ";
+            cin >> Cost_Pgasoline;
+
+            cout << "Average miles per gallon: ";
+            cin >> Amiles;
+
+            
+
+            cout << "Enter parking fees per day: ";
+            cin >> Fees;
+
+            cout << "Enter total amount of tolls per day: ";
+            cin >> Tolls;
+
+            total_cost = (miles/Amiles) * Cost_Pgasoline + Fees + Tolls;
+
+            cout << "Total driving cost per day is: " << total_cost << endl;
+            return 0;
+        }
